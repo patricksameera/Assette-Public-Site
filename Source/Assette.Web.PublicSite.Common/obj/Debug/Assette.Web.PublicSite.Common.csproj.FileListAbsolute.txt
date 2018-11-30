@@ -1,0 +1,9 @@
+G:\Assette Site - Versions\Project Solution\Assette.Web\Source\Assette.Web.PublicSite.Common\bin\Debug\Assette.Web.PublicSite.Common.dll
+G:\Assette Site - Versions\Project Solution\Assette.Web\Source\Assette.Web.PublicSite.Common\bin\Debug\Assette.Web.PublicSite.Common.pdb
+G:\Assette Site - Versions\Project Solution\Assette.Web\Source\Assette.Web.PublicSite.Common\obj\Debug\Assette.Web.PublicSite.Common.dll
+G:\Assette Site - Versions\Project Solution\Assette.Web\Source\Assette.Web.PublicSite.Common\obj\Debug\Assette.Web.PublicSite.Common.pdb
+G:\Assette Site - Versions\Project Solution\Assette.Web\Source\Assette.Web.PublicSite.Common\obj\Debug\Assette.Web.PublicSite.Common.csprojResolveAssemblyReference.cache
+G:\Assette Site - Versions\Project Solution\Sam Repo\Assette.Web\Source\Assette.Web.PublicSite.Common\bin\Debug\Assette.Web.PublicSite.Common.dll
+G:\Assette Site - Versions\Project Solution\Sam Repo\Assette.Web\Source\Assette.Web.PublicSite.Common\bin\Debug\Assette.Web.PublicSite.Common.pdb
+G:\Assette Site - Versions\Project Solution\Sam Repo\Assette.Web\Source\Assette.Web.PublicSite.Common\obj\Debug\Assette.Web.PublicSite.Common.dll
+G:\Assette Site - Versions\Project Solution\Sam Repo\Assette.Web\Source\Assette.Web.PublicSite.Common\obj\Debug\Assette.Web.PublicSite.Common.pdb

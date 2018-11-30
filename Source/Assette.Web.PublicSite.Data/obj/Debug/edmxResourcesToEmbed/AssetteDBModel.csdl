@@ -1,0 +1,244 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="AssetteModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+  <EntityContainer Name="AssetteEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="paObjects" EntityType="AssetteModel.paObject" />
+    <EntitySet Name="CaseStudies" EntityType="AssetteModel.CaseStudies" />
+    <EntitySet Name="Clients" EntityType="AssetteModel.Clients" />
+    <AssociationSet Name="FK_AST_CaseStudies_AST_Clients" Association="AssetteModel.FK_AST_CaseStudies_AST_Clients">
+      <End Role="AST_Clients" EntitySet="Clients" />
+      <End Role="AST_CaseStudies" EntitySet="CaseStudies" />
+    </AssociationSet>
+    <EntitySet Name="NewsReleases" EntityType="AssetteModel.NewsReleases" />
+    <EntitySet Name="Users" EntityType="AssetteModel.Users" />
+    <EntitySet Name="Testimonials" EntityType="AssetteModel.Testimonials" />
+    <AssociationSet Name="FK_AST_Testimonials_AST_Clients" Association="AssetteModel.FK_AST_Testimonials_AST_Clients">
+      <End Role="Clients" EntitySet="Clients" />
+      <End Role="AST_Testimonials" EntitySet="Testimonials" />
+    </AssociationSet>
+    <EntitySet Name="PageUrls" EntityType="AssetteModel.PageUrls" />
+    <EntitySet Name="UserCookies" EntityType="AssetteModel.UserCookie" />
+    <EntitySet Name="UserActivities" EntityType="AssetteModel.UserActivity" />
+    <EntitySet Name="PressReleases" EntityType="AssetteModel.PressReleases" />
+    <EntitySet Name="PressReleaseQuotes" EntityType="AssetteModel.PressReleaseQuotes" />
+    <EntitySet Name="BlogEntries" EntityType="AssetteModel.BlogEntries" />
+    <EntitySet Name="Prospects" EntityType="AssetteModel.Prospects" />
+  </EntityContainer>
+  <EntityType Name="paObject">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+    <Property Name="ObjectTypeID" Type="Int32" />
+    <Property Name="ParamsXML" Type="String" MaxLength="1000" Unicode="false" FixedLength="false" />
+    <Property Name="SPName" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="ObjectXML" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="PropertyXML" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="NodeValue" Type="String" MaxLength="8000" Unicode="false" FixedLength="false" />
+    <Property Name="FormatXML" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="ObjectTag" Type="String" MaxLength="500" Unicode="false" FixedLength="false" />
+    <Property Name="TransformXSL" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="BinaryImage" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="Height" Type="Int32" />
+    <Property Name="Width" Type="Int32" />
+    <Property Name="CreatedDate" Type="DateTime" />
+    <Property Name="ModifiedDate" Type="DateTime" />
+    <Property Name="PowerPointFile" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="CreatedBy" Type="Int32" />
+    <Property Name="ModifiedBy" Type="Int32" />
+    <Property Name="DeletedBy" Type="Int32" />
+    <Property Name="DeletedDate" Type="DateTime" />
+    <Property Name="IsDeleted" Type="Boolean" Nullable="false" />
+    <Property Name="Version" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="ObjectCategoryID" Type="Int32" />
+    <Property Name="Description" Type="String" MaxLength="4000" Unicode="false" FixedLength="false" />
+    <Property Name="ObjectID" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+    <Property Name="ObjectPackID" Type="Int32" />
+    <Property Name="ObjectPackGuid" Type="Guid" Nullable="false" />
+    <Property Name="ObjectImage" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="ObjectThumbnail" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="ClientType" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="CaseStudies">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Type="Int32" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int32" Name="ClientId" Nullable="false" />
+    <Property Type="String" Name="Author" Nullable="false" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="PositionOfAuthor" Nullable="false" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Summary" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="QuotedText" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="CaseStudyFileURL" Nullable="false" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="Rank" Nullable="false" />
+    <Property Type="DateTime" Name="DatePublished" Nullable="false" />
+    <Property Type="Boolean" Name="IsActive" Nullable="false" />
+    <Property Type="Guid" Name="CreatedBy" Nullable="false" />
+    <Property Type="DateTime" Name="DateCreated" Nullable="false" />
+    <NavigationProperty Name="AST_Clients" Relationship="AssetteModel.FK_AST_CaseStudies_AST_Clients" FromRole="AST_CaseStudies" ToRole="AST_Clients" />
+  </EntityType>
+  <EntityType Name="Clients">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Type="Int32" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="Name" Nullable="false" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="AUM" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="WebURL" Nullable="false" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="LogoURL" Nullable="false" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="Rank" Nullable="false" />
+    <Property Type="Boolean" Name="IsActive" Nullable="false" />
+    <Property Type="Guid" Name="CreatedBy" Nullable="false" />
+    <Property Type="DateTime" Name="DateCreated" Nullable="false" />
+    <NavigationProperty Name="AST_CaseStudies" Relationship="AssetteModel.FK_AST_CaseStudies_AST_Clients" FromRole="AST_Clients" ToRole="AST_CaseStudies" />
+    <NavigationProperty Name="AST_Testimonials" Relationship="AssetteModel.FK_AST_Testimonials_AST_Clients" FromRole="Clients" ToRole="AST_Testimonials" />
+  </EntityType>
+  <Association Name="FK_AST_CaseStudies_AST_Clients">
+    <End Type="AssetteModel.Clients" Role="AST_Clients" Multiplicity="1" />
+    <End Type="AssetteModel.CaseStudies" Role="AST_CaseStudies" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AST_Clients">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="AST_CaseStudies">
+        <PropertyRef Name="ClientId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="NewsReleases">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Type="Int32" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="Title" Nullable="false" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Description" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="NewsReleaseFileURL" Nullable="false" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="DatePublished" Nullable="false" />
+    <Property Type="Boolean" Name="IsActive" Nullable="false" />
+    <Property Type="Guid" Name="CreatedBy" Nullable="false" />
+    <Property Type="DateTime" Name="DateCreated" Nullable="false" />
+    <Property Type="Boolean" Name="IsSecure" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Users">
+    <Key>
+      <PropertyRef Name="UserId" />
+    </Key>
+    <Property Type="Int32" Name="UserId" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="UserName" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="ApplicationName" Nullable="false" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Email" Nullable="false" MaxLength="128" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Password" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="Boolean" Name="IsApproved" Nullable="false" />
+    <Property Type="DateTime" Name="LastLoginDate" />
+    <Property Type="DateTime" Name="RegisteredDate" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Testimonials">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Type="Int32" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int32" Name="ClientId" Nullable="false" />
+    <Property Type="String" Name="Author" Nullable="false" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="PositionOfAuthor" Nullable="false" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Testimonial" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="Rank" Nullable="false" />
+    <Property Type="DateTime" Name="DatePublished" Nullable="false" />
+    <Property Type="Boolean" Name="IsActive" Nullable="false" />
+    <Property Type="Guid" Name="CreatedBy" Nullable="false" />
+    <Property Type="DateTime" Name="DateCreated" Nullable="false" />
+    <NavigationProperty Name="AST_Clients" Relationship="AssetteModel.FK_AST_Testimonials_AST_Clients" FromRole="AST_Testimonials" ToRole="Clients" />
+    <Property Type="Boolean" Name="IsShowOnHomePage" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_AST_Testimonials_AST_Clients">
+    <End Type="AssetteModel.Clients" Role="Clients" Multiplicity="1" />
+    <End Type="AssetteModel.Testimonials" Role="AST_Testimonials" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Clients">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="AST_Testimonials">
+        <PropertyRef Name="ClientId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="PageUrls">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Type="Int32" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="PageUrl" Nullable="false" MaxLength="200" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="UserCookie">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Type="Int32" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Guid" Name="UserGuid" Nullable="false" />
+    <Property Type="Guid" Name="ProspectGuid" Nullable="false" />
+    <Property Type="DateTime" Name="DateCreated" Nullable="false" />
+  </EntityType>
+  <EntityType Name="UserActivity">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Type="Int32" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Guid" Name="UserGuid" Nullable="false" />
+    <Property Type="Int32" Name="PageId" Nullable="false" />
+    <Property Type="DateTime" Name="DateCreated" Nullable="false" />
+  </EntityType>
+  <EntityType Name="PressReleases">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Type="Int32" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="Title" Nullable="false" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Description" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="PressReleaseFileURL" Nullable="false" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="DatePublished" Nullable="false" />
+    <Property Type="Boolean" Name="IsActive" Nullable="false" />
+    <Property Type="Guid" Name="CreatedBy" Nullable="false" />
+    <Property Type="DateTime" Name="DateCreated" Nullable="false" />
+  </EntityType>
+  <EntityType Name="PressReleaseQuotes">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Type="Int32" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="Author" Nullable="false" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="PositionOfAuthor" Nullable="false" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Company" Nullable="false" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Quote" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="Rank" Nullable="false" />
+    <Property Type="DateTime" Name="DatePublished" Nullable="false" />
+    <Property Type="Boolean" Name="IsActive" Nullable="false" />
+    <Property Type="Guid" Name="CreatedBy" Nullable="false" />
+    <Property Type="DateTime" Name="DateCreated" Nullable="false" />
+  </EntityType>
+  <EntityType Name="BlogEntries">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Type="Int32" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="Title" Nullable="false" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Description" Nullable="false" MaxLength="400" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Url" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Type="Boolean" Name="IsActive" Nullable="false" />
+    <Property Type="DateTime" Name="DateCreated" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Prospects">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Type="Guid" Name="Id" Nullable="false" />
+    <Property Type="String" Name="FirstName" Nullable="false" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="LastName" Nullable="false" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Email" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Company" Nullable="false" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="RegisteredIP" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="RegisteredDate" Nullable="false" />
+    <Property Type="String" Name="JobTitle" Nullable="false" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Title" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="FirmAUM" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="FirmType" MaxLength="200" FixedLength="false" Unicode="false" />
+  </EntityType>
+</Schema>

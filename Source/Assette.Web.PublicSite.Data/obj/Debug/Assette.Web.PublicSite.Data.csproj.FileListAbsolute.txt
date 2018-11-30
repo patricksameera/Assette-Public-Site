@@ -1,0 +1,40 @@
+C:\Users\sameeraj\Desktop\Assette.Web\Source\Assette.Web.PublicSite.Data\bin\Debug\Assette.Web.PublicSite.Data.dll.config
+C:\Users\sameeraj\Desktop\Assette.Web\Source\Assette.Web.PublicSite.Data\bin\Debug\Assette.Web.PublicSite.Data.dll
+C:\Users\sameeraj\Desktop\Assette.Web\Source\Assette.Web.PublicSite.Data\bin\Debug\Assette.Web.PublicSite.Data.pdb
+C:\Users\sameeraj\Desktop\Assette.Web\Source\Assette.Web.PublicSite.Data\bin\Debug\BTA.EPM.Common.dll
+C:\Users\sameeraj\Desktop\Assette.Web\Source\Assette.Web.PublicSite.Data\bin\Debug\log4net.dll
+C:\Users\sameeraj\Desktop\Assette.Web\Source\Assette.Web.PublicSite.Data\bin\Debug\Newtonsoft.Json.dll
+C:\Users\sameeraj\Desktop\Assette.Web\Source\Assette.Web.PublicSite.Data\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\sameeraj\Desktop\Assette.Web\Source\Assette.Web.PublicSite.Data\obj\Debug\Assette.Web.PublicSite.Data.dll
+C:\Users\sameeraj\Desktop\Assette.Web\Source\Assette.Web.PublicSite.Data\obj\Debug\Assette.Web.PublicSite.Data.pdb
+G:\Assette Site - Versions\New folder\Source\Assette.Web.PublicSite.Data\bin\Debug\Assette.Web.PublicSite.Data.dll.config
+G:\Assette Site - Versions\New folder\Source\Assette.Web.PublicSite.Data\bin\Debug\Assette.Web.PublicSite.Data.dll
+G:\Assette Site - Versions\New folder\Source\Assette.Web.PublicSite.Data\bin\Debug\Assette.Web.PublicSite.Data.pdb
+G:\Assette Site - Versions\New folder\Source\Assette.Web.PublicSite.Data\bin\Debug\BTA.EPM.Common.dll
+G:\Assette Site - Versions\New folder\Source\Assette.Web.PublicSite.Data\bin\Debug\log4net.dll
+G:\Assette Site - Versions\New folder\Source\Assette.Web.PublicSite.Data\bin\Debug\Newtonsoft.Json.dll
+G:\Assette Site - Versions\New folder\Source\Assette.Web.PublicSite.Data\obj\Debug\ResolveAssemblyReference.cache
+G:\Assette Site - Versions\New folder\Source\Assette.Web.PublicSite.Data\obj\Debug\Assette.Web.PublicSite.Data.dll
+G:\Assette Site - Versions\New folder\Source\Assette.Web.PublicSite.Data\obj\Debug\Assette.Web.PublicSite.Data.pdb
+G:\Assette Site - Versions\Project Solution\Assette.Web\Source\Assette.Web.PublicSite.Data\bin\Debug\Assette.Web.PublicSite.Data.dll.config
+G:\Assette Site - Versions\Project Solution\Assette.Web\Source\Assette.Web.PublicSite.Data\bin\Debug\Assette.Web.PublicSite.Data.dll
+G:\Assette Site - Versions\Project Solution\Assette.Web\Source\Assette.Web.PublicSite.Data\bin\Debug\Assette.Web.PublicSite.Data.pdb
+G:\Assette Site - Versions\Project Solution\Assette.Web\Source\Assette.Web.PublicSite.Data\bin\Debug\Assette.Web.PublicSite.Common.dll
+G:\Assette Site - Versions\Project Solution\Assette.Web\Source\Assette.Web.PublicSite.Data\bin\Debug\BTA.EPM.Common.dll
+G:\Assette Site - Versions\Project Solution\Assette.Web\Source\Assette.Web.PublicSite.Data\bin\Debug\log4net.dll
+G:\Assette Site - Versions\Project Solution\Assette.Web\Source\Assette.Web.PublicSite.Data\bin\Debug\Newtonsoft.Json.dll
+G:\Assette Site - Versions\Project Solution\Assette.Web\Source\Assette.Web.PublicSite.Data\bin\Debug\Assette.Web.PublicSite.Common.pdb
+G:\Assette Site - Versions\Project Solution\Assette.Web\Source\Assette.Web.PublicSite.Data\obj\Debug\Assette.Web.PublicSite.Data.csprojResolveAssemblyReference.cache
+G:\Assette Site - Versions\Project Solution\Assette.Web\Source\Assette.Web.PublicSite.Data\obj\Debug\Assette.Web.PublicSite.Data.dll
+G:\Assette Site - Versions\Project Solution\Assette.Web\Source\Assette.Web.PublicSite.Data\obj\Debug\Assette.Web.PublicSite.Data.pdb
+G:\Assette Site - Versions\Project Solution\Sam Repo\Assette.Web\Source\Assette.Web.PublicSite.Data\bin\Debug\Assette.Web.PublicSite.Data.dll.config
+G:\Assette Site - Versions\Project Solution\Sam Repo\Assette.Web\Source\Assette.Web.PublicSite.Data\bin\Debug\Assette.Web.PublicSite.Data.dll
+G:\Assette Site - Versions\Project Solution\Sam Repo\Assette.Web\Source\Assette.Web.PublicSite.Data\bin\Debug\Assette.Web.PublicSite.Data.pdb
+G:\Assette Site - Versions\Project Solution\Sam Repo\Assette.Web\Source\Assette.Web.PublicSite.Data\bin\Debug\Assette.Web.PublicSite.Common.dll
+G:\Assette Site - Versions\Project Solution\Sam Repo\Assette.Web\Source\Assette.Web.PublicSite.Data\bin\Debug\BTA.EPM.Common.dll
+G:\Assette Site - Versions\Project Solution\Sam Repo\Assette.Web\Source\Assette.Web.PublicSite.Data\bin\Debug\log4net.dll
+G:\Assette Site - Versions\Project Solution\Sam Repo\Assette.Web\Source\Assette.Web.PublicSite.Data\bin\Debug\Newtonsoft.Json.dll
+G:\Assette Site - Versions\Project Solution\Sam Repo\Assette.Web\Source\Assette.Web.PublicSite.Data\bin\Debug\Assette.Web.PublicSite.Common.pdb
+G:\Assette Site - Versions\Project Solution\Sam Repo\Assette.Web\Source\Assette.Web.PublicSite.Data\obj\Debug\Assette.Web.PublicSite.Data.csprojResolveAssemblyReference.cache
+G:\Assette Site - Versions\Project Solution\Sam Repo\Assette.Web\Source\Assette.Web.PublicSite.Data\obj\Debug\Assette.Web.PublicSite.Data.dll
+G:\Assette Site - Versions\Project Solution\Sam Repo\Assette.Web\Source\Assette.Web.PublicSite.Data\obj\Debug\Assette.Web.PublicSite.Data.pdb

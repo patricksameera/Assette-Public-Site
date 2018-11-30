@@ -1,0 +1,4 @@
+G:\Assette Site - Versions\Project Solution\Sam Repo\Assette.Web\Source\Assette.Web.PublicSite.Common\bin\Release\Assette.Web.PublicSite.Common.dll
+G:\Assette Site - Versions\Project Solution\Sam Repo\Assette.Web\Source\Assette.Web.PublicSite.Common\bin\Release\Assette.Web.PublicSite.Common.pdb
+G:\Assette Site - Versions\Project Solution\Sam Repo\Assette.Web\Source\Assette.Web.PublicSite.Common\obj\Release\Assette.Web.PublicSite.Common.dll
+G:\Assette Site - Versions\Project Solution\Sam Repo\Assette.Web\Source\Assette.Web.PublicSite.Common\obj\Release\Assette.Web.PublicSite.Common.pdb

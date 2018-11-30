@@ -1,0 +1,327 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="AssetteMaterPage.master.cs"
+    Inherits="Assette.Web.PublicSite.AssetteMaterPage" %>
+
+<!DOCTYPE html>
+<html lang="en">
+<head runat="server">
+    <title></title>
+    <link rel="SHORTCUT ICON" href="assette.ico" />
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,600,600italic,400italic,700,700italic,300,300italic"
+        rel='stylesheet' type='text/css'>
+    <%--StyleSheet Reference--%>
+    <link href="styles/assette.css?v=1.0.0.24" rel="stylesheet" />
+    <link href="styles/slider.css" rel="stylesheet" />
+    <link href="styles/jquery-ui.css" rel="stylesheet" type="text/css" />
+    <%--Script Reference--%>
+    <script src="scripts/jquery-1.7.2.js" type="text/javascript"></script>
+    <script src="scripts/jquery-ui.js" type="text/javascript"></script>
+    <script src="scripts/assette.js?v=1.0.0.24" type="text/javascript"></script>
+    <%--fancy box--%>
+    <link href="scripts/fancybox/jquery.fancybox.css" rel="stylesheet" type="text/css" />
+    <script src="scripts/fancybox/jquery.fancybox.js" type="text/javascript"></script>
+    <script src="scripts/fancybox/jquery.fancybox-media.js" type="text/javascript"></script>
+    <script src="scripts/fancybox/jquery.fancybox-buttons.js" type="text/javascript"></script>
+    <script src="scripts/fancybox/jquery.fancybox-thumbs.js" type="text/javascript"></script>
+    <%--youtube api--%>
+    <script src="http://www.youtube.com/player_api" type="text/javascript"></script>
+    <%--share this--%>
+    <script type="text/javascript">        var switchTo5x = false;</script>
+    <script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
+    <script type="text/javascript">        stLight.options({ publisher: "62df8832-b028-4ed4-8a10-ec8009f55605", doNotHash: true, doNotCopy: true, hashAddressBar: false });</script>
+    <%--jw palyer--%>
+    <%--<script type="text/javascript" src="jwplayer/jwplayer.js"></script>
+    <script type="text/javascript">        jwplayer.key = "0JBhuZW69VXrcwG7x3PE9fXClC0/muDXzuy2mw==";</script>
+    <script type="text/javascript" src="http://www.longtailvideo.com/jw/embed/swfobject.js"></script>--%>
+    <%--simplyscroll--%>
+    <script src="scripts/simplyscroll/jquery.simplyscroll.js" type="text/javascript"></script>
+    <link href="scripts/simplyscroll/jquery.simplyscroll.css" rel="stylesheet" type="text/css" />
+    <%--Script Reference watermark--%>
+    <script src="scripts/watermark/jquery.watermark.js" type="text/javascript"></script>
+    <%--vimeo--%>
+    <script src="scripts/vimeo.js" type="text/javascript"></script>
+    <script src="scripts/froogaloop2.min.js" type="text/javascript"></script>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <a id="top"></a>
+    <div class="master_header">
+        <asp:ContentPlaceHolder ID="HeaderPlaceHolder" runat="server">
+            <div class="top">
+                <div class="assette_logo">
+                    <a href="default.aspx" style="outline: none; text-decoration: none;"><span class="image_helper">
+                    </span>
+                        <img src="images/assette_logo.png?v=<%= ConfigurationSettings.AppSettings["Version"] %>"
+                            alt="" width="164" height="26" />
+                    </a>
+                </div>
+                <div class="top_links">
+                    <ul>
+                        <li><a id="lnkgallery" href="../gallery">Gallery</a></li>
+                        <li>|</li>
+                        <li><a id="lnkblog" target="_blank" href="http://blog.assette.com">Blog</a></li>
+                        <li>|</li>
+                        <li><a id="lnkcontact" href="contact.aspx">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="navigation">
+                <ul class="top_navigation">
+                    <li class="top_navigation_link"><a id="lnkabout" href="about-assette.aspx">ABOUT</a>
+                        <span id="bottomabout" class="bottom_navigation bottom_navigation_4links"><a id="lnkpeople"
+                            href="people.aspx">The Assette Story</a> <a id="lnkwhyassette" href="why-assette.aspx">
+                                Why Assette?</a> <a id="lnkexpert" href="the-expert-network.aspx">Expert Network</a><a
+                                    id="lnkContact" href="contact.aspx">Contact</a> </span></li>
+                    <li class="top_navigation_link"><a id="lnkproduct" href="investment-reporting-software.aspx">
+                        PRODUCTS</a> <span id="bottomproduct" class="bottom_navigation bottom_navigation_4links">
+                            <a id="lnkpresentations" href="pitch-book-software.aspx">Assette Presentations</a>
+                            <a id="lnkreports" href="portfolio-reporting-software.aspx">Assette Reports</a>
+                            <a id="lnkportal" href="portfolio-management-system.aspx">Assette Portal</a> <a id="lnkeasyreports"
+                                href="portfolio-accounting-system-reporting.aspx">Easy Editions</a> </span>
+                    </li>
+                    <li class="top_navigation_link"><a id="lnkclients" href="clients.aspx">CLIENTS</a> <span
+                        id="bottomclients" class="bottom_navigation_special bottom_navigation_client"><a
+                            id="lnkcasestudies" href="client-case-studies.aspx">Case Studies</a></span>
+                    </li>
+                    <li class="top_navigation_link"><a id="lnktechnology" href="investment-manager-software.aspx">
+                        TECHNOLOGY</a><span id="bottomtechnology" class="bottom_navigation bottom_navigation_5links"><a
+                            id="lnkonboarding" href="onboarding.aspx">Onboarding</a> <a id="lnkdatainterface"
+                                href="investment-management-software-interfaces.aspx">Data Interfaces</a> <a id="lnkdatavalidation"
+                                    href="data-validations.aspx">Automatic Data Checks</a> <a id="lnkdatarequirement"
+                                        href="data-requirements.aspx">Data Requirements</a><a id="lnksecurity" href="security.aspx">Security</a>
+                        </span></li>
+                    <li class="top_navigation_link"><a id="lnkwhite" href="white-papers.aspx">WHITE PAPERS</a>
+                    </li>
+                    <li class="top_navigation_link1"><a id="lnknews" href="press-releases.aspx">NEWS</a>
+                    </li>
+                </ul>
+            </div>
+        </asp:ContentPlaceHolder>
+    </div>
+    <div class="master_body">
+        <asp:ContentPlaceHolder ID="BodyPlaceHolder" runat="server">
+        </asp:ContentPlaceHolder>
+    </div>
+    <div class="master_footer">
+        <asp:ContentPlaceHolder ID="FooterPlaceHolder" runat="server">
+            <table class="footer_table">
+                <tbody>
+                    <tr>
+                        <td class="td_header">
+                            <a href="about-assette.aspx">ABOUT</a>
+                        </td>
+                        <td class="td_header">
+                            <a href="investment-reporting-software.aspx">PRODUCTS</a>
+                        </td>
+                        <td class="td_header">
+                            <a href="investment-manager-software.aspx">TECHNOLOGY</a>
+                        </td>
+                        <td class="td_header">
+                            <a href="clients.aspx">CLIENTS</a>
+                        </td>
+                        <td class="td_header">
+                            <a href="contact.aspx">CONTACT</a>
+                        </td>
+                        <td class="td_header" style="padding-left: 60px;">
+                            CONNECT
+                        </td>
+                    </tr>
+                    <tr class="td_data">
+                        <td>
+                            <a href="people.aspx">The Assette Story</a>
+                        </td>
+                        <td>
+                            <a href="pitch-book-software.aspx">Assette Presentations</a>
+                        </td>
+                        <td>
+                            <a href="onboarding.aspx">Onboarding</a>
+                        </td>
+                        <td>
+                            <a href="client-case-studies.aspx">Case Studies</a>
+                        </td>
+                        <td>
+                            <a href="mailto:sales@assette.com">sales@assette.com</a>
+                        </td>
+                        <td rowspan="2">
+                            <%--<div class="social_logos" style="padding-top: 6px;">
+                                <a target="_blank" href="http://facebook.com/assette">
+                                    <img src="images/facebook.png?v=<%= ConfigurationSettings.AppSettings["Version"] %>"
+                                        alt="" width="40" height="40" /></a>&nbsp;&nbsp;&nbsp;<a target="_blank" href="http://twitter.com/@AssetteReport"><img
+                                            src="images/twitter.png?v=<%= ConfigurationSettings.AppSettings["Version"] %>"
+                                            alt="" width="40" height="40" /></a>
+                            </div>--%>
+                            <div class="hubspot_social_logos">
+                                <div class="hs_followme" style="height: 52px; width: 100px;">
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr class="td_data">
+                        <td>
+                            <a href="why-assette.aspx">Why Assette?</a>
+                        </td>
+                        <td>
+                            <a href="portfolio-reporting-software.aspx">Assette Reports</a>
+                        </td>
+                        <td>
+                            <a href="investment-management-software-interfaces.aspx">Data Interfaces</a>
+                        </td>
+                        <td>
+                            &nbsp;
+                        </td>
+                        <td>
+                            <a href="mailto:ClientService@assette.com">ClientService@assette.com</a>
+                        </td>
+                        <%--<td>
+                        </td>--%>
+                    </tr>
+                    <tr class="td_data">
+                        <td>
+                            <a href="the-expert-network.aspx">Expert Network</a>
+                        </td>
+                        <td>
+                            <a href="portfolio-management-system.aspx">Assette Portal</a>
+                        </td>
+                        <td>
+                            <a href="data-validations.aspx">Automatic Data Checks</a>
+                        </td>
+                        <td class="td_header">
+                            <a href="white-papers.aspx">WHITE PAPERS</a>
+                        </td>
+                        <td>
+                            877.723.6161
+                        </td>
+                        <td rowspan="2">
+                            <%--<div class="social_logos" style="padding-top: 6px;">
+                                <a target="_blank" href="http://www.linkedin.com/company/88210">
+                                    <img src="images/linkedin.png?v=<%= ConfigurationSettings.AppSettings["Version"] %>"
+                                        alt="" width="40" height="40" /></a>&nbsp;&nbsp;&nbsp;<a target="_blank" href="https://plus.google.com/115895639267447124427"><img
+                                            src="images/gplus.png?v=<%= ConfigurationSettings.AppSettings["Version"] %>"
+                                            alt="" width="40" height="40" /></a>
+                            </div>--%>
+                        </td>
+                    </tr>
+                    <tr class="td_data">
+                        <td>
+                            <a href="contact.aspx">Contact</a>
+                        </td>
+                        <td>
+                            <a href="portfolio-accounting-system-reporting.aspx">Easy Editions</a>
+                        </td>
+                        <td>
+                            <a href="data-requirements.aspx">Data Requirements</a>
+                        </td>
+                        <td>
+                            &nbsp;
+                        </td>
+                        <td>
+                            1 Faneuil Hall,
+                        </td>
+                        <%--<td>
+                        </td>--%>
+                    </tr>
+                    <tr class="td_data">
+                        <td>
+                            &nbsp;
+                        </td>
+                        <td>
+                            &nbsp;
+                        </td>
+                        <td>
+                            <a href="security.aspx">Security</a>
+                        </td>
+                        <td class="td_header">
+                            <a href="press-releases.aspx">NEWS</a>
+                        </td>
+                        <td>
+                            Boston, MA 02109
+                        </td>
+                        <td rowspan="2">
+                            <%--<div class="social_logos" style="padding-right: 49px; padding-top: 6px;">
+                                <a target="_blank" href="http://www.youtube.com/assette1">
+                                    <img src="images/youtube.png?v=<%= ConfigurationSettings.AppSettings["Version"] %>"
+                                        alt="" width="40" height="40" /></a>
+                            </div>--%>
+                        </td>
+                    </tr>
+                    <tr class="td_data">
+                        <td>
+                            &nbsp;
+                        </td>
+                        <td>
+                            &nbsp;
+                        </td>
+                        <td>
+                            &nbsp;
+                        </td>
+                        <td>
+                            &nbsp;
+                        </td>
+                        <td>
+                            &nbsp;
+                        </td>
+                        <%--<td>
+                            &nbsp;
+                        </td>--%>
+                    </tr>
+            </table>
+        </asp:ContentPlaceHolder>
+        <%--<div class='share_section'>
+            <span class='st_facebook_large' st_url="http://www.assette.com/gallery" st_title="Check out Assette. They have everything you need to effectively communicate investment results to clients. See the comprehensive library of reports at ">
+            </span><span class="st_twitter_large" st_url="http://www.assette.com/gallery" st_title="Everything you need to effectively communicate with clients! Check out ">
+            </span><span class='st_linkedin_large' st_title="Assette Gallery" st_summary="Check out Assette. They have everything you need to effectively communicate investment results to clients. See the comprehensive library of reports at "
+                st_url="http://www.assette.com/gallery"></span>
+        </div>--%>
+        <div class='share_section'>
+        </div>
+        <div style="display: none">
+            <a class="product_video_dummy" href="http://www.youtube.com/embed/">
+                <img src="images/video_image_large.png?v=<%= ConfigurationSettings.AppSettings["Version"] %>"
+                    alt="" width="415" height="253" /></a></div>
+    </div>
+    <asp:HiddenField ID="hdnLink" runat="server" />
+    <asp:HiddenField ID="hdnRegistered" runat="server" />
+    <asp:HiddenField ID="hdnContactSalesViewVideo" runat="server" />
+    <asp:HiddenField ID="hdnRequestDemoViewVideo" runat="server" />
+    <asp:HiddenField ID="hdnVersion" runat="server" />
+    <asp:HiddenField ID="hdnShowEasyPricing" runat="server" />
+    <asp:HiddenField ID="hdnShowEasyPricingCTA" runat="server" />
+    </form>
+    <!-- Start of Async HubSpot Analytics Code -->
+    <script type="text/javascript">
+        (function (d, s, i, r) {
+            if (d.getElementById(i)) { return; }
+            var n = d.createElement(s), e = d.getElementsByTagName(s)[0];
+            n.id = i; n.src = '//js.hubspot.com/analytics/' + (Math.ceil(new Date() / r) * r) + '/279299.js';
+            e.parentNode.insertBefore(n, e);
+        })(document, "script", "hs-analytics", 300000);
+    </script>
+    <!-- End of Async HubSpot Analytics Code -->
+    <!-- google analytics -->
+    <script type="text/javascript">
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-32165472-1']);
+        _gaq.push(['_setDomainName', 'assette.com']);
+        _gaq.push(['_trackPageview']);
+
+        (function () {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+    </script>
+    <!-- google analytics -->
+    ​<!-- hubspot.com follow code -->
+    <%--<div class="hs_followme" style="height: 52px">
+    </div>--%>
+    <script type="text/javascript">
+        var __hs_fm = { portal: 279299, host: 'hubapi.com', blog: false };
+        (function () {
+            var fm = document.createElement('script');
+            fm.type = 'text/javascript'; fm.async = true;
+            fm.src = '//static.hubspot.com/js/fm.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(fm, s);
+        })();
+    </script>
+    <!-- end hubspot.com follow code -->
+</body>
+</html>

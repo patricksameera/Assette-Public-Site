@@ -1,0 +1,208 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="AssetteModelStoreContainer" CdmEntityContainer="AssetteEntities">
+    <EntitySetMapping Name="paObjects">
+      <EntityTypeMapping TypeName="AssetteModel.paObject">
+        <MappingFragment StoreEntitySet="paObjects">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="ObjectTypeID" ColumnName="ObjectTypeID" />
+          <ScalarProperty Name="ParamsXML" ColumnName="ParamsXML" />
+          <ScalarProperty Name="SPName" ColumnName="SPName" />
+          <ScalarProperty Name="ObjectXML" ColumnName="ObjectXML" />
+          <ScalarProperty Name="PropertyXML" ColumnName="PropertyXML" />
+          <ScalarProperty Name="NodeValue" ColumnName="NodeValue" />
+          <ScalarProperty Name="FormatXML" ColumnName="FormatXML" />
+          <ScalarProperty Name="ObjectTag" ColumnName="ObjectTag" />
+          <ScalarProperty Name="TransformXSL" ColumnName="TransformXSL" />
+          <ScalarProperty Name="BinaryImage" ColumnName="BinaryImage" />
+          <ScalarProperty Name="Height" ColumnName="Height" />
+          <ScalarProperty Name="Width" ColumnName="Width" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="PowerPointFile" ColumnName="PowerPointFile" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="DeletedBy" ColumnName="DeletedBy" />
+          <ScalarProperty Name="DeletedDate" ColumnName="DeletedDate" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="Version" ColumnName="Version" />
+          <ScalarProperty Name="ObjectCategoryID" ColumnName="ObjectCategoryID" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="ObjectID" ColumnName="ObjectID" />
+          <ScalarProperty Name="ObjectPackID" ColumnName="ObjectPackID" />
+          <ScalarProperty Name="ObjectPackGuid" ColumnName="ObjectPackGuid" />
+          <ScalarProperty Name="ObjectImage" ColumnName="ObjectImage" />
+          <ScalarProperty Name="ObjectThumbnail" ColumnName="ObjectThumbnail" />
+          <ScalarProperty Name="ClientType" ColumnName="ClientType" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CaseStudies">
+      <EntityTypeMapping TypeName="AssetteModel.CaseStudies">
+        <MappingFragment StoreEntitySet="AST_CaseStudies">
+          <ScalarProperty Name="DateCreated" ColumnName="DateCreated" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="DatePublished" ColumnName="DatePublished" />
+          <ScalarProperty Name="Rank" ColumnName="Rank" />
+          <ScalarProperty Name="CaseStudyFileURL" ColumnName="CaseStudyFileURL" />
+          <ScalarProperty Name="QuotedText" ColumnName="QuotedText" />
+          <ScalarProperty Name="Summary" ColumnName="Summary" />
+          <ScalarProperty Name="PositionOfAuthor" ColumnName="PositionOfAuthor" />
+          <ScalarProperty Name="Author" ColumnName="Author" />
+          <ScalarProperty Name="ClientId" ColumnName="ClientId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Clients">
+      <EntityTypeMapping TypeName="AssetteModel.Clients">
+        <MappingFragment StoreEntitySet="AST_Clients">
+          <ScalarProperty Name="DateCreated" ColumnName="DateCreated" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="Rank" ColumnName="Rank" />
+          <ScalarProperty Name="LogoURL" ColumnName="LogoURL" />
+          <ScalarProperty Name="WebURL" ColumnName="WebURL" />
+          <ScalarProperty Name="AUM" ColumnName="AUM" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="NewsReleases">
+      <EntityTypeMapping TypeName="AssetteModel.NewsReleases">
+        <MappingFragment StoreEntitySet="AST_NewsReleases">
+          <ScalarProperty Name="IsSecure" ColumnName="IsSecure" />
+          <ScalarProperty Name="DateCreated" ColumnName="DateCreated" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="DatePublished" ColumnName="DatePublished" />
+          <ScalarProperty Name="NewsReleaseFileURL" ColumnName="NewsReleaseFileURL" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Users">
+      <EntityTypeMapping TypeName="AssetteModel.Users">
+        <MappingFragment StoreEntitySet="GLRY_Users">
+          <ScalarProperty Name="RegisteredDate" ColumnName="RegisteredDate" />
+          <ScalarProperty Name="LastLoginDate" ColumnName="LastLoginDate" />
+          <ScalarProperty Name="IsApproved" ColumnName="IsApproved" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="ApplicationName" ColumnName="ApplicationName" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Testimonials">
+      <EntityTypeMapping TypeName="AssetteModel.Testimonials">
+        <MappingFragment StoreEntitySet="AST_Testimonials">
+          <ScalarProperty Name="IsShowOnHomePage" ColumnName="IsShowOnHomePage" />
+          <ScalarProperty Name="DateCreated" ColumnName="DateCreated" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="DatePublished" ColumnName="DatePublished" />
+          <ScalarProperty Name="Rank" ColumnName="Rank" />
+          <ScalarProperty Name="Testimonial" ColumnName="Testimonial" />
+          <ScalarProperty Name="PositionOfAuthor" ColumnName="PositionOfAuthor" />
+          <ScalarProperty Name="Author" ColumnName="Author" />
+          <ScalarProperty Name="ClientId" ColumnName="ClientId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PageUrls">
+      <EntityTypeMapping TypeName="AssetteModel.PageUrls">
+        <MappingFragment StoreEntitySet="AST_PageUrls">
+          <ScalarProperty Name="PageUrl" ColumnName="PageUrl" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UserCookies">
+      <EntityTypeMapping TypeName="AssetteModel.UserCookie">
+        <MappingFragment StoreEntitySet="AST_UserCookie">
+          <ScalarProperty Name="DateCreated" ColumnName="DateCreated" />
+          <ScalarProperty Name="ProspectGuid" ColumnName="ProspectGuid" />
+          <ScalarProperty Name="UserGuid" ColumnName="UserGuid" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UserActivities">
+      <EntityTypeMapping TypeName="AssetteModel.UserActivity">
+        <MappingFragment StoreEntitySet="AST_UserActivity">
+          <ScalarProperty Name="DateCreated" ColumnName="DateCreated" />
+          <ScalarProperty Name="PageId" ColumnName="PageId" />
+          <ScalarProperty Name="UserGuid" ColumnName="UserGuid" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PressReleases">
+      <EntityTypeMapping TypeName="AssetteModel.PressReleases">
+        <MappingFragment StoreEntitySet="AST_PressReleases">
+          <ScalarProperty Name="DateCreated" ColumnName="DateCreated" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="DatePublished" ColumnName="DatePublished" />
+          <ScalarProperty Name="PressReleaseFileURL" ColumnName="PressReleaseFileURL" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PressReleaseQuotes">
+      <EntityTypeMapping TypeName="AssetteModel.PressReleaseQuotes">
+        <MappingFragment StoreEntitySet="AST_PressReleaseQuotes">
+          <ScalarProperty Name="DateCreated" ColumnName="DateCreated" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="DatePublished" ColumnName="DatePublished" />
+          <ScalarProperty Name="Rank" ColumnName="Rank" />
+          <ScalarProperty Name="Quote" ColumnName="Quote" />
+          <ScalarProperty Name="Company" ColumnName="Company" />
+          <ScalarProperty Name="PositionOfAuthor" ColumnName="PositionOfAuthor" />
+          <ScalarProperty Name="Author" ColumnName="Author" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="BlogEntries">
+      <EntityTypeMapping TypeName="AssetteModel.BlogEntries">
+        <MappingFragment StoreEntitySet="AST_BlogEntries">
+          <ScalarProperty Name="DateCreated" ColumnName="DateCreated" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="Url" ColumnName="Url" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Prospects">
+      <EntityTypeMapping TypeName="AssetteModel.Prospects">
+        <MappingFragment StoreEntitySet="GLRY_Prospects">
+          <ScalarProperty Name="FirmType" ColumnName="FirmType" />
+          <ScalarProperty Name="FirmAUM" ColumnName="FirmAUM" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="JobTitle" ColumnName="JobTitle" />
+          <ScalarProperty Name="RegisteredDate" ColumnName="RegisteredDate" />
+          <ScalarProperty Name="RegisteredIP" ColumnName="RegisteredIP" />
+          <ScalarProperty Name="Company" ColumnName="Company" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
